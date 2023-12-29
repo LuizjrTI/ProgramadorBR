@@ -163,3 +163,13 @@ site para referencias: ![w3schools](https://www.w3schools.com)
 ```html
 <p>Esse é um <sup>texto superscript;</sup>Alguma coisa<sup>2</sup></p>
 ```
+
+## HTML - LINK
+
+- Basicamente para fazer um redirecionamento você usa a tag `<a>`, passando um link ou diretorio de um arquivo html.
+
+### Uso/Exemplos
+
+```html
+<a href="sobre.html">Sobre Nós</a>
+```
