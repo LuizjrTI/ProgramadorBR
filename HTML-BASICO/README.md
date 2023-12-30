@@ -191,3 +191,7 @@ site para referencias: ![w3schools](https://www.w3schools.com)
 ```html
 <a href=""><img src="URL ou endereço local" alt="Descrição da imagem" /></a>
 ```
+
+## HTML - QUEBRA DE LINHA
+
+- Para realizar uma simples quebra de linha, podemos usar a tag `<br>`
