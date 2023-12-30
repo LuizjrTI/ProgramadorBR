@@ -173,3 +173,21 @@ site para referencias: ![w3schools](https://www.w3schools.com)
 ```html
 <a href="sobre.html">Sobre Nós</a>
 ```
+
+## HTML - IMAGENS
+
+- Para trabalhar com imagens usamos a tag `<img>`. Use o atributo "src" para indicar o local da imagem sendo ou uma imagem já na web ou em um repsoitorio local, outro atributo que deve ser utilizado é o "alt" que serve com uma alternativa caso o navegador não consiga renderizar a imagem passada. outra função desse atributo está em dizer ao navegador do que se trata aquele conteudo.
+
+### Uso/Exemplos
+
+```html
+<img src="URL ou endereço local" alt="Descrição da imagem" />
+```
+
+- Podemos ainda utilizar imagens como links para isso basta envolver a tag `img` com a tag `a`.
+
+### Uso/Exemplos
+
+```html
+<a href=""><img src="URL ou endereço local" alt="Descrição da imagem" /></a>
+```
