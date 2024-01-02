@@ -195,3 +195,64 @@ site para referencias: ![w3schools](https://www.w3schools.com)
 ## HTML - QUEBRA DE LINHA
 
 - Para realizar uma simples quebra de linha, podemos usar a tag `<br>`
+
+## HTML - LISTAS
+
+### Lista não ordenada
+
+- Para criação de uma lista sem ordenação use a tag `<ul>` e para criar um item dentro da lista use a tag `<li>`.
+
+### Uso/Exemplos
+
+```html
+<h2>Lista de Compras</h2>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+### Lista ordenada
+
+- Para criação de uma lista ordenada use a tag `<ol>` e para criar um item dentro da lista use a tag `<li>`.
+
+### Uso/Exemplos
+
+```html
+<h2>Ranking dos melhores vendedores</h2>
+<ol>
+  <li>Marcos</li>
+  <li>João</li>
+  <li>Luiz</li>
+</ol>
+```
+
+## HTML - TABELAS
+
+- Para criação de uma tabela usamos a tag `<table>`.
+- Para criação de uma linha dentro da tabela usamos a tag `<tr>`.
+- Para criação do cabeçalho da tabela use a tag `<th>`.
+- Para criação de um dado use a tag `<td>`.
+
+### Uso/Exemplos
+
+```html
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>Luiz Jr</td>
+    <td>(31)9 9999-9999</td>
+    <td>email@email.com</td>
+  </tr>
+  <tr>
+    <td>Luiz Jr 2</td>
+    <td>(31)9 8888-8888</td>
+    <td>email2@email.com</td>
+  </tr>
+</table>
+```
