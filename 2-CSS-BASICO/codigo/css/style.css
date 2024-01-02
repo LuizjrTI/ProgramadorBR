@@ -1,0 +1,19 @@
+#principal {
+  color: black;
+}
+
+#titulo {
+  color: blue;
+}
+
+.texto_verde {
+  color: green;
+}
+
+#div1 {
+  background-color: red;
+}
+
+#subdiv1 {
+  background-color: yellow;
+}
