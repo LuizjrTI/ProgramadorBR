@@ -194,7 +194,7 @@ CSS
 
 - Nesse primeiro exemplo o fundo do identificador ficará com a cor ciano.
 
-* Outra forma de uso do backgroud é com imagens.
+* Outra forma de uso do background é com imagens.
 
 ## Uso/Exemplos
 
@@ -279,3 +279,259 @@ CSS
 ## CSS - FERRAMENTAS DO NAVEGADOR
 
 - Use e abuse do inspecionar, ele tras informações relevantes do seu codigo html e css.
+
+## CSS - UNIDADE DE MEDIDAS (FIXAS)
+
+- Existem 6 medidas fixas no css, elas são **cm**, **mm**, **in**, polegadas do inglês, **px**, **pt**, dependendo do device essa medida pode conter um ou mais pixels e a **pc**, essa contem 12 pontos (**pt**).
+
+## Uso/Exemplos
+
+HTML
+
+```html
+<body>
+  <div id="cm"></div>
+  <div id="mm"></div>
+  <div id="in"></div>
+  <div id="px"></div>
+  <div id="pt"></div>
+  <div id="pc"></div>
+</body>
+```
+
+CSS
+
+```css
+#cm {
+  background-color: blue;
+  width: 1cm;
+  height: 1cm;
+}
+
+#mm {
+  background-color: red;
+  width: 1mm;
+  height: 1mm;
+}
+
+#in {
+  background-color: blue;
+  width: 1in;
+  height: 1in;
+}
+
+#px {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+
+#pt {
+  background-color: blue;
+  width: 10pt;
+  height: 10pt;
+}
+
+#pc {
+  background-color: red;
+  width: 1pc;
+  height: 1pc;
+}
+```
+
+## CSS - UNIDADE DE MEDIDAS (REFERENCIA)
+
+- A primeira unidade de medida por referencia é o **em**, essa medida está sempre relacionada ao font-size do elemento, entretanto isso não me empede de usar ela em altura ou largura tambem.
+
+### Uso/Exemplos
+
+```html
+<body>
+  Texto no body
+  <div class="container">
+    Texto no container
+    <div class="inside">Texto no inside</div>
+  </div>
+</body>
+```
+
+```css
+.container {
+  font-size: 25px;
+
+  width: 300px;
+  background: red;
+}
+
+.inside {
+  font-size: 2em;
+  width: 2em;
+  background: blue;
+}
+```
+
+No caso o font-size da class inside será de 50px ( 25px da class container \* 2em da class inside) e o width será de 100px devido ser referencia do font-size.
+
+- Outra medida de referencia é a **rem**, ele faz referencia ao tamanho da fonte raiz.
+
+### Uso/Exemplos
+
+```html
+<body>
+  Texto no body
+  <div class="container">
+    Texto no container
+    <div class="inside">Texto no inside</div>
+  </div>
+</body>
+```
+
+```css
+html {
+  font-size: 20px;
+}
+
+.container {
+  font-size: 25px;
+}
+
+.inside {
+  font-size: 2em;
+}
+```
+
+No caso a font-side da class inside tera um tamanho de 40px ( 20px da raiz que no caso é o HTML \* 2em da class inside), pois ela tem por referencia a raiz.
+
+- Outra medida de referencia e a **vw** é relacionado a largura do device.
+- Outra medida de referencia e a **vh** é relacionado a altura do device.
+- Outra medida de referencia é a **vmin** é uma unidade de medida em CSS que representa a porcentagem do menor valor entre a largura do viewport (janela de visualização) e a altura do viewport.
+- Outra medida de referencia é a **vmax** é uma unidade de medida em CSS que representa a porcentagem do maior valor entre a largura do viewport (janela de visualização) e a altura do viewport.
+- Outra medida de referencia é a **%** é uma unidade de referencia ao tamanho do elemento pai.
+
+## CSS - Margin e Padding
+
+- Margin é o espaçamento externo e o padding é o espaçamento interno.
+- Margin e padding podem ser usados sozinhos, entretanto eu consigo determinar o quando eu quero em cada posição.
+
+### Uso/Exemplos
+
+```html
+<body>
+  <div id="base"></div>
+  <div id="container">
+    <div id="conteudo">texto qualquer</div>
+  </div>
+
+  Outro texto
+</body>
+```
+
+```css
+#base {
+  height: 10px;
+  background-color: red;
+}
+
+/* #container {
+  background-color: blue;
+  color: white;
+  margin: 10px;
+} */
+
+#container {
+  background-color: blue;
+  color: white;
+  padding-top: 10px;
+}
+```
+
+## CSS - BORDER
+
+- A propriedade border em CSS é utilizada para especificar a largura, o estilo e a cor da borda de um elemento HTML.
+
+### Uso/Exemplos
+
+```html
+<body>
+  <div class="borda">Conteúdo</div>
+  <div class="quadrado borda"></div>
+</body>
+```
+
+```css
+/* .borda {
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+} */
+
+.borda {
+  border: 5px dashed blue;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.dotted {
+  border-style: dotted;
+}
+.dashed {
+  border-style: dashed;
+}
+.solid {
+  border-style: solid;
+}
+.none {
+  border-style: none;
+}
+.hidden {
+  border-style: hidden;
+}
+```
+
+## CSS - BOX MODEL
+
+- O modelo de caixa (box model) no CSS refere-se à maneira como os elementos HTML são renderizados e ocupam espaço na página. Ele consiste em quatro componentes principais: conteúdo, preenchimento (padding), borda e margem.
+
+### Uso/Exemplos
+
+```html
+<body>
+  <div class="container">
+    <div class="conteudo">Conteúdo</div>
+  </div>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+.container {
+  background-color: red;
+  padding: 10px;
+  border: 5px solid blue;
+  margin: 10px;
+}
+
+.conteudo {
+  background-color: #ddd;
+  border: 5px solid green;
+  padding: 5px;
+}
+
+/* .conteudo {
+  background-color: #ddd;
+  outline: 5px solid green;
+  padding: 5px;
+} */
+```
+
+No CSS, a propriedade border define a aparência da borda de um elemento, controlando largura, estilo e cor. Por outro lado, a propriedade outline cria uma linha ao redor do elemento, geralmente para destacar o foco, sem impactar o layout, ignorando a largura e o estilo. Ambas são usadas para realçar elementos, mas border afeta o layout, enquanto outline não.

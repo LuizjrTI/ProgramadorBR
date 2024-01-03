@@ -1,19 +1,24 @@
-#principal {
-  color: black;
+body {
+  margin: 0;
+  padding: 0;
 }
+/* Essa propriedade acima é para zerar o body */
 
-#titulo {
-  color: blue;
-}
-
-.texto_verde {
-  color: green;
-}
-
-#div1 {
+.container {
   background-color: red;
+  padding: 10px;
+  border: 5px solid blue;
+  margin: 10px;
 }
 
-#subdiv1 {
-  background-color: yellow;
+.conteudo {
+  background-color: #ddd;
+  border: 5px solid green;
+  padding: 5px;
 }
+
+/* .conteudo {
+  background-color: #ddd;
+  outline: 5px solid green;
+  padding: 5px;
+} */
