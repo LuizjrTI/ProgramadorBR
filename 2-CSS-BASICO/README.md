@@ -534,4 +534,247 @@ body {
 } */
 ```
 
-No CSS, a propriedade border define a aparência da borda de um elemento, controlando largura, estilo e cor. Por outro lado, a propriedade outline cria uma linha ao redor do elemento, geralmente para destacar o foco, sem impactar o layout, ignorando a largura e o estilo. Ambas são usadas para realçar elementos, mas border afeta o layout, enquanto outline não.
+- No CSS, a propriedade border define a aparência da borda de um elemento, controlando largura, estilo e cor. Por outro lado, a propriedade outline cria uma linha ao redor do elemento, geralmente para destacar o foco, sem impactar o layout, ignorando a largura e o estilo. Ambas são usadas para realçar elementos, mas border afeta o layout, enquanto outline não.
+
+### Uso/Exemplos
+
+```html
+<body>
+  <div class="square">TEXTO</div>
+  <div class="square2">TEXTO</div>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 10px solid blue;
+}
+
+.square2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+```
+
+## CSS - AJUSTES DE TEXTO
+
+- Como configurar uma apresentação textual no css.
+
+### Uso/Exemplos
+
+```html
+<body>
+  <p>
+    Pretium inceptos diam consectetur sem aenean facilisis netus fringilla,
+    sollicitudin hendrerit phasellus ante blandit quisque ipsum, sit in etiam
+    litora non aliquam donec. maecenas quis hendrerit ad praesent netus quam in
+    habitant, suscipit lobortis erat ullamcorper dictumst eleifend. praesent
+    nostra felis bibendum justo facilisis mattis accumsan netus et porta per at
+    porta faucibus, fringilla egestas augue rhoncus vivamus pellentesque tempus
+    ut sapien ac tincidunt dolor lobortis. rhoncus eu et praesent amet lobortis
+    nullam quam, semper dolor aenean massa phasellus amet. inceptos tempus
+    conubia nunc sapien feugiat orci dui dictum nullam commodo, tempor imperdiet
+    augue velit erat laoreet malesuada nisl vulputate.
+  </p>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+p {
+  color: red;
+  /* Por padrão o text-align é left */
+  /* text-align: justify; */
+  /* text-transform: lowercase; */
+  /* text-indent: 35px; */
+  /* text-decoration: line-through overline underline; */
+  /* letter-spacing: 1.2px; */
+  /* line-height: 10px; */
+  /* word-spacing: 5px; */
+  /* text-shadow: 2px 2px black; */
+}
+```
+
+# CSS - FONTES
+
+- Propriedades de fontes do CSS.
+
+### Uso/Exemplos
+
+```html
+<body>
+  <p>
+    Pretium inceptos diam consectetur sem aenean facilisis netus fringilla,
+    sollicitudin hendrerit phasellus ante blandit quisque ipsum, sit in etiam
+    litora non aliquam donec. maecenas quis hendrerit ad praesent netus quam in
+    habitant, suscipit lobortis erat ullamcorper dictumst eleifend. praesent
+    nostra felis bibendum justo facilisis mattis accumsan netus et porta per at
+    porta faucibus, fringilla egestas augue rhoncus vivamus pellentesque tempus
+    ut sapien ac tincidunt dolor lobortis. rhoncus eu et praesent amet lobortis
+    nullam quam, semper dolor aenean massa phasellus amet. inceptos tempus
+    conubia nunc sapien feugiat orci dui dictum nullam commodo, tempor imperdiet
+    augue velit erat laoreet malesuada nisl vulputate.
+  </p>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+p {
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  font-variant: small-caps; */
+}
+```
+
+## CSS - FONTES CUSTOMIZADAS
+
+### Uso/Exemplos
+
+- Por exemplo você pode acessar o google fonts e baixar uma fonte.
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+p {
+  font-family: fonteTeste, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+@font-face {
+  font-family: fonteTeste;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+```
+
+## CSS - ESTILO DE LINKS
+
+- Estilização de links e os 4 estados do link
+  - **link** estado padrão
+  - **visited** estado quando o link já foi visitado
+  - **hover** estado quando o mouse passa em cima do link
+  - **active** estado quando ocorre o click do link
+
+### Uso/Exemplos
+
+```html
+<body>
+  <a href="#">Cadastrar</a>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+a {
+  text-decoration: none;
+  color: black;
+  /* cursor: pointer; */
+  /* background-color: gray; */
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+/* a:visited{
+
+} */
+
+/* a:hover {
+  background-color: black;
+  color: gray;
+} */
+
+a:active {
+  background-color: black;
+  color: gray;
+}
+```
+
+## CSS - LISTAS
+
+- Estilização basica de listas
+
+### Uso/Exemplos
+
+```html
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Essa propriedade acima é para zerar o body */
+
+ul {
+  /* list-style-type: square; */
+  /* list-style-position: inside; */
+  /* list-style-image: url(../img/fundo.jpeg); */
+  padding: 10px;
+  margin: 0;
+  background-color: #f3e;
+}
+
+ol {
+  /* list-style-position: inside; */
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  background-color: #59e;
+}
+
+li {
+  border: 1px solid black;
+  background-color: yellow;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+```
