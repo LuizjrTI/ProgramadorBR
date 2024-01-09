@@ -6,30 +6,78 @@
     <title>Document</title>
     <style>
       body {
-        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
       }
-      #quadrado {
-        width: 50px;
-        height: 50px;
-        background-color: blue;
-        /* margin: auto; */
-        margin-left: auto;
-      }
-      img {
-        /* display: inline;
-        display: inline-block; 
-        Nessas duas propriedades o margin auto não funciona*/
+      .header {
+        overflow: hidden;
         margin: auto;
+        width: 80%;
+        background-color: #5c57a4;
+        padding: 15px;
+        font-size: 18px;
       }
-      #container {
-        text-align: right;
+
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
+
+      li {
+        float: left;
+        color: white;
+        margin-left: 15px;
+      }
+
+      .logo {
+        float: left;
+        color: white;
+      }
+      /*Order de tamanho importa*/
+      /* @media screen and(min-width:700px) {
+        .header {
+          background-color: gray;
+        }
+      } */
+      @media screen and(max-width:700px) {
+        .header {
+          background-color: gray;
+        }
+      }
+
+      @media screen and(max-width:500px) {
+        /* .header {
+          background-color: gray;
+        } */
+
+        .logo {
+          float: none;
+          text-align: center;
+        }
+        .menu {
+          margin-top: 20px;
+          float: none;
+          text-align: center;
+        }
+        li {
+          float: none;
+          margin-bottom: 5px;
+          padding: 10px;
+        }
       }
     </style>
   </head>
   <body>
-    <div id="quadrado"></div>
-    <div id="container">
-      <img src="#" alt="#" />
+    <div class="header">
+      <div class="logo">logo</div>
+      <ul class="menu">
+        <li>Home</li>
+        <li>Cursos</li>
+        <li>Contato</li>
+        <li>Escritorios</li>
+      </ul>
     </div>
   </body>
 </html>
