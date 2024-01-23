@@ -1,4 +1,4 @@
-## JAVASCRIPT - HELLO WORLD
+## JAVASCRIPT BASICO - HELLO WORLD
 
 ### Uso/Exemplos
 
@@ -24,11 +24,11 @@
 alert("Olá Mundo");
 ```
 
-## JAVASCRIPT - ALGORITMO
+## JAVASCRIPT BASICO - ALGORITMO
 
 - Um algoritmo é uma sequência lógica e finita de instruções que visa resolver um problema ou realizar uma tarefa específica. Ele é composto por passos claros e definidos, permitindo a execução automatizada por um computador.
 
-## JAVASCRIPT - CONSOLE
+## JAVASCRIPT BASICO - CONSOLE
 
 - No contexto do navegador ou terminal do VS Code, o termo "console" refere-se a uma interface interativa que permite a comunicação entre o usuário e o ambiente de desenvolvimento. No navegador, o console geralmente é usado para depuração, exibição de mensagens de erro, e execução de scripts JavaScript. No VS Code, o terminal é uma janela de linha de comando onde você pode executar comandos do sistema operacional ou scripts, facilitando a interação com o ambiente de desenvolvimento.
 
@@ -38,7 +38,7 @@ alert("Olá Mundo");
 console.log("Olá Mundo");
 ```
 
-## JAVASCRIPT - VARIAVEIS
+## JAVASCRIPT BASICO - VARIAVEIS
 
 - Variáveis em JavaScript são contêineres para armazenar valores. Elas são declaradas usando as palavras-chave `var`, `let`, ou `const`, seguidas por um nome de variável. Exemplos:
 
@@ -63,7 +63,7 @@ a = b;
 console.log("🚀 ~ a:", a);
 ```
 
-## JAVASCRIPT - TIPOS DE DADOS
+## JAVASCRIPT BASICO - TIPOS DE DADOS
 
 - Boolean
 - Null
@@ -71,7 +71,7 @@ console.log("🚀 ~ a:", a);
 - Number
 - String
 
-## JAVASCRIPT - OPERADORES ARITMETICOS
+## JAVASCRIPT BASICO - OPERADORES ARITMETICOS
 
 - JavaScript possui operadores aritméticos que realizam operações matemáticas básicas. Aqui estão alguns dos operadores aritméticos em JavaScript:
 
@@ -149,7 +149,7 @@ contador--; // agora contador é 4
 
 - Esses operadores são essenciais para realizar cálculos e manipulações numéricas em JavaScript.
 
-## JAVASCRIPT - ATRIBUIÇÕES
+## JAVASCRIPT BASICO - ATRIBUIÇÕES
 
 - Em JavaScript, os operadores de atribuição são utilizados para associar valores a variáveis. Aqui estão alguns dos operadores de atribuição em JavaScript:
 
@@ -208,7 +208,7 @@ divisao /= 3; // Agora, 'divisao' é igual a 5
 
 - Esses operadores de atribuição são fundamentais para manipular valores em variáveis, facilitando a atualização e modificação dos dados ao longo do código JavaScript.
 
-## JAVASCRIPT - OPERADORES DE COMPARAÇÃO
+## JAVASCRIPT BASICO - OPERADORES DE COMPARAÇÃO
 
 - Os operadores de comparação em JavaScript são utilizados para avaliar a relação entre dois valores e retornam um resultado booleano (verdadeiro ou falso). Aqui estão alguns dos operadores de comparação em JavaScript:
 
@@ -294,7 +294,7 @@ divisao /= 3; // Agora, 'divisao' é igual a 5
 
 - Esses operadores são fundamentais para condicionais e estruturas de controle de fluxo em JavaScript, permitindo avaliar condições e tomar decisões com base nas comparações realizadas.
 
-## JAVASCRIPT - OPERADORES LOGICOS
+## JAVASCRIPT BASICO - OPERADORES LOGICOS
 
 - Os operadores lógicos em JavaScript são utilizados para combinar ou modificar valores booleanos, produzindo um resultado booleano. Aqui estão os principais operadores lógicos:
 
@@ -330,7 +330,7 @@ divisao /= 3; // Agora, 'divisao' é igual a 5
 
 - Esses operadores são frequentemente utilizados em expressões condicionais, estruturas de controle de fluxo e tomada de decisões em JavaScript. Eles permitem a criação de lógicas mais complexas ao combinar condições simples. Por exemplo, ao verificar múltiplas condições e decidir se um bloco de código deve ser executado com base nessas condições.
 
-## JAVASCRIPT - STRING'S
+## JAVASCRIPT BASICO - STRING'S
 
 - Em JavaScript, uma string é uma sequência de caracteres que representa texto. As strings podem ser definidas utilizando aspas simples **(')** ou duplas **(")**, e podem conter letras, números, símbolos e espaços. Para criar uma string:
 
@@ -352,7 +352,7 @@ let nomeCompleto = nome + " " + sobrenome; // "John Doe"
 
 - As strings em JavaScript são imutáveis, o que significa que uma vez criadas, não podem ser alteradas. No entanto, é possível criar novas strings com base nas operações desejadas.
 
-## JAVASCRIPT - ESTRUTURAS CONDICIONAIS
+## JAVASCRIPT BASICO - ESTRUTURAS CONDICIONAIS
 
 - As estruturas condicionais em JavaScript permitem controlar o fluxo do programa com base em condições específicas. As principais construções condicionais são:
 
@@ -428,7 +428,7 @@ switch (diaDaSemana) {
 
 - Essas estruturas condicionais permitem que o código JavaScript tome decisões dinâmicas com base em diferentes condições, fornecendo flexibilidade e controle sobre o fluxo de execução do programa.
 
-## JAVASCRIPT - TRANSFORMANDO STRING EM NUMEROS
+## JAVASCRIPT BASICO - TRANSFORMANDO STRING EM NUMEROS
 
 - Em JavaScript, as funções parseInt e parseFloat são utilizadas para converter strings em números, permitindo operações matemáticas e facilitando a manipulação numérica.
 
@@ -462,7 +462,7 @@ console.log(numeroDecimal); // Saída: 3.14
 - Ambas as funções são cruciais para transformar dados de entrada do usuário, frequentemente fornecidos como strings, em formatos numéricos para realizar cálculos ou comparações.
 - Lembre-se de que, se a string não for completamente numérica, pode ocorrer um NaN, e é importante validar ou verificar os dados antes de realizar conversões.
 
-## JAVASCRIPT - ALERT E PROMPT
+## JAVASCRIPT BASICO - ALERT E PROMPT
 
 1. `alert`:
 
@@ -500,7 +500,7 @@ var dobro = numero * 2;
 alert("O dobro de " + numero + " é " + dobro);
 ```
 
-## JAVASCRIPT - OPERADOR TERNARIO
+## JAVASCRIPT BASICO - OPERADOR TERNARIO
 
 - O operador ternário em JavaScript é uma forma compacta de escrever uma expressão condicional, permitindo a atribuição de valores com base em uma condição específica. Sua sintaxe é a seguinte:
 - **condicao ? valorSeVerdadeiro : valorSeFalso;**
@@ -519,7 +519,7 @@ console.log(status); // Saída: "Maior de idade"
 
 Neste exemplo, a variável `status` recebe o valor "Maior de idade" se a `idade` for maior ou igual a 18, caso contrário, recebe o valor "Menor de idade". O operador ternário é uma maneira concisa de expressar estruturas condicionais simples em uma única linha de código.
 
-## JAVASCRIPT - REPETIÇÕES FOR, FOREACH E WHILE
+## JAVASCRIPT BASICO - REPETIÇÕES FOR, FOREACH E WHILE
 
 1. `for`:
 
@@ -567,7 +567,7 @@ while (contador < 3) {
 
 - Essas estruturas de repetição são fundamentais para controlar fluxos de execução e realizar tarefas repetitivas em JavaScript, cada uma adequada a diferentes contextos e necessidades.
 
-## JAVASCRIPT - ARRAY'S
+## JAVASCRIPT BASICO - ARRAY'S
 
 - um array é uma estrutura de dados que armazena uma coleção ordenada de elementos. Abaixo estão alguns dos principais métodos utilizados para manipular arrays.
 
@@ -650,7 +650,7 @@ frutas.splice(1, 2, "uva", "pêra"); // frutas agora é ["maçã", "uva", "pêra
 
 - Esses métodos são apenas uma amostra das muitas operações que podem ser realizadas em arrays em JavaScript. Eles proporcionam flexibilidade e poder para manipular dados de forma eficiente.
 
-## JAVASCRIPT - FUNÇÕES
+## JAVASCRIPT BASICO - FUNÇÕES
 
 - Em JavaScript, as funções são blocos de código reutilizáveis, projetados para realizar uma tarefa específica. Elas são fundamentais para a modularidade e organização do código. Uma função é declarada usando a palavra-chave function seguida por um nome e um conjunto de parâmetros entre parênteses. Aqui estão alguns conceitos importantes relacionados a funções:
 
@@ -745,7 +745,7 @@ function exemplo() {
 
 - Esses conceitos formam a base para a criação e uso de funções em JavaScript, proporcionando modularidade, reutilização de código e melhor organização do programa.
 
-## JAVASCRIPT - OBJETOS
+## JAVASCRIPT BASICO - OBJETOS
 
 - Em JavaScript, objetos são estruturas de dados que permitem armazenar e organizar informações de maneira mais complexa do que os tipos de dados simples. Um objeto é uma coleção de pares chave-valor, onde cada valor é acessado através de uma chave única. Aqui estão alguns conceitos importantes relacionados a objetos:
 
@@ -845,7 +845,7 @@ let livro = {
 
 - Os objetos em JavaScript são uma parte fundamental da linguagem, permitindo a criação de estruturas de dados complexas e a representação de entidades do mundo real de forma eficiente.
 
-## JAVASCRIPT - OBJETOS - CONSTRUTOR
+## JAVASCRIPT BASICO - OBJETOS - CONSTRUTOR
 
 - Construtores em JavaScript são funções especiais utilizadas para criar e inicializar objetos. Eles são frequentemente usados em conjunto com a palavra-chave new para criar instâncias de um tipo de objeto específico. Aqui estão os principais conceitos relacionados a construtores:
 
@@ -920,7 +920,7 @@ Pessoa.prototype.cumprimentar = function () {
 
 - Os construtores são uma maneira eficiente de criar objetos em JavaScript, especialmente quando você precisa criar várias instâncias do mesmo tipo de objeto. Eles ajudam na organização do código e na reutilização de lógica comum.
 
-## JAVASCRIPT - DATAS
+## JAVASCRIPT BASICO - DATAS
 
 - Em JavaScript, o objeto `Date` é utilizado para trabalhar com datas e horas. Ele fornece métodos e propriedades que permitem a manipulação, obtenção e representação de informações temporais. Aqui estão alguns conceitos fundamentais relacionados a datas em JavaScript:
 
