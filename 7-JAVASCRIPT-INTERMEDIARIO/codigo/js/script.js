@@ -1,12 +1,7 @@
-window.onload = function () {
-  let h1 = document.getElementsByTagName("h1");
-  for (h of h1) {
-    console.log(h);
-    h.addEventListener("click", qop);
-  }
+let pessoas = ["a", "b", "c", "d", "e"];
 
-  function qop() {
-    let t = e.target;
-    console.log(t.parentElement);
-  }
-};
+function sortear() {
+  let np = pessoas.length;
+  let ns = Math.floor(Math.random() * np);
+  document.getElementById("d").innerHTML = pessoas[ns];
+}

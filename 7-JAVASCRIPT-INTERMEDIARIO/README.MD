@@ -939,3 +939,85 @@ const primeiraChave = localStorage.key(0);
 ```
 
 - É importante notar que os valores armazenados no Local Storage são sempre tratados como strings. Se você precisar armazenar objetos JavaScript, é comum usar `JSON.stringify` para converter o objeto em uma string antes de armazená-lo e `JSON.parse` para convertê-lo de volta para um objeto ao recuperá-lo.
+
+## JAVASCRIPT INTERMEDIARIO - CRIANDO UMA PAGINA DE SORTEIO
+
+**HTML**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <h1 id="d"></h1>
+    <button onclick="sortear()">Sortear</button>
+  </body>
+</html>
+```
+
+**JS**
+
+```js
+let pessoas = ["a", "b", "c", "d", "e"];
+
+function sortear() {
+  let np = pessoas.length;
+  let ns = Math.floor(Math.random() * np);
+  document.getElementById("d").innerHTML = pessoas[ns];
+}
+```
+
+## JAVASCRIPT INTERMEDIARIO - TIMER E INTERVALO
+
+- Em JavaScript, você pode usar os seguintes métodos para lidar com timers e intervalos:
+
+1. **`setTimeout(callback, delay)`**
+
+   - Executa a função de retorno de chamada após um determinado atraso, especificado em milissegundos.
+
+```js
+setTimeout(function () {
+  console.log("Executou após 2 segundos");
+}, 2000);
+```
+
+2. **`setInterval(callback, interval)`**
+
+   - Executa a função de retorno de chamada repetidamente em intervalos fixos, especificados em milissegundos.
+
+```js
+setInterval(function () {
+  console.log("Executará a cada 3 segundos");
+}, 3000);
+```
+
+3. **`clearTimeout(timeoutId)`**
+
+   - Cancela a execução de um `setTimeout` antes que o código seja executado.
+
+```js
+const timeoutId = setTimeout(function () {
+  console.log("Isso não será executado");
+}, 2000);
+
+clearTimeout(timeoutId);
+```
+
+3. **`clearInterval(intervalId)`**
+
+   - Cancela a execução de um `setInterval`, interrompendo a repetição..
+
+```js
+const intervalId = setInterval(function () {
+  console.log("Isso será executado a cada 3 segundos");
+}, 3000);
+
+clearInterval(intervalId);
+```
+
+- Esses métodos são úteis para criar animações, atualizações periódicas e lidar com tarefas assíncronas em JavaScript. Certifique-se de compreender como funcionam os timers e intervalos para evitar problemas como vazamento de memória e execução não desejada de código.
