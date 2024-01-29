@@ -1,6 +1,6 @@
 ## HTML - TAG
 
-- <nomeDaTag> Meu Titulo </nomeDaTag> -> Esse conjunto é um Elemento HTML, Sendo necessario para interpretação do navegador.
+- `<nomeDaTag>` Meu Titulo `</nomeDaTag>` -> Esse conjunto é um Elemento HTML, Sendo necessario para interpretação do navegador.
 
 - `<tag>` -> Tag de Abertura
 - `</tag>` -> Tag de Fechamento

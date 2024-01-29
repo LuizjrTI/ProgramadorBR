@@ -16,24 +16,18 @@ function adicionarTarefa() {
 
 function limparListarTarefa() {
   let listaTarefas = localStorage.getItem("listaTarefas");
+  let resultadoTarefas = document.getElementById("resultado");
   if (listaTarefas != null) {
     localStorage.removeItem("listaTarefas");
+    resultadoTarefas.innerHTML = "";
   }
-  this.exbirListarTarefa();
 }
 
 function exbirListarTarefa() {
-  let elementoAnterior = document.getElementById("Container-input");
-  console.log(elementoAnterior);
-  let tarefas = JSON.parse(localStorage.getItem("listaTarefas"));
-  document.write(
-    elementoAnterior +
-      "<div>" +
-      "<ol>" +
-      tarefas.listaTarefas.forEach((element) => {
-        document.write("<li>" + element + "</li>");
-      }) +
-      "</ol>" +
-      "</div>"
-  );
+  let resultadoTarefas = document.getElementById("resultado");
+  let retornolistaTarefas = JSON.parse(localStorage.getItem("listaTarefas"));
+  console.log(retornolistaTarefas.listaTarefas);
+  retornolistaTarefas.listaTarefas.forEach((element) => {
+    resultadoTarefas.innerHTML += `<li>${element}</li>`;
+  });
 }

@@ -11,24 +11,17 @@
     <div id="Container-input">
       <h1>Lista de tarefas</h1>
       <p>Insira a tarefa no campo abaixo</p>
-      <form action="">
-        <input
-          type="text"
-          name="tarefa"
-          id="tarefa"
-          placeholder="Insira a tarefa..."
-        />
-        <input
-          type="submit"
-          value="Adicionar Tarefa"
-          onclick="adicionarTarefa()"
-        />
-        <input
-          type="reset"
-          value="Limpar Lista"
-          onclick="limparListarTarefa()"
-        />
-      </form>
+      <input
+        type="text"
+        name="tarefa"
+        id="tarefa"
+        placeholder="Insira a tarefa..."
+      />
+      <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+      <button onclick="limparListarTarefa()">Limpar Tarefa</button>
+    </div>
+    <div id="Container-resultado">
+      <ul id="resultado"></ul>
     </div>
   </body>
 </html>
