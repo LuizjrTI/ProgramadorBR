@@ -117,7 +117,7 @@ site para referencias: ![w3schools](https://www.w3schools.com)
 ### Uso/Exemplos
 
 ```html
-<p>Esse é um texto <mark> com a tag small</mark></p>
+<p>Esse é um texto <small> com a tag small</small></p>
 ```
 
 ### TEXTO EXCLUIDO / RISCADO AO MEIO
