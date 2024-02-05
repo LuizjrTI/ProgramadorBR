@@ -1,0 +1,26 @@
+#container {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+  animation-name: mudancaCor;
+  animation-duration: 3s;
+}
+
+@keyframes mudancaCor {
+  0% {
+    background-color: red;
+    width: 100px;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: green;
+    width: 400px;
+  }
+  100% {
+    background-color: black;
+    width: 100px;
+  }
+}
